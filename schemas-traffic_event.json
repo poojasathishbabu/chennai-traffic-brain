@@ -1,0 +1,32 @@
+{
+  "title": "TrafficEvent",
+  "type": "object",
+  "required": [
+    "event_id",
+    "ts",
+    "lat",
+    "lon",
+    "speed_kmh",
+    "corridor"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string"
+    },
+    "ts": {
+      "type": "integer"
+    },
+    "lat": {
+      "type": "number"
+    },
+    "lon": {
+      "type": "number"
+    },
+    "speed_kmh": {
+      "type": "number"
+    },
+    "corridor": {
+      "type": "string"
+    }
+  }
+}

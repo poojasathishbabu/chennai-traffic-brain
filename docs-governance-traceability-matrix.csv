@@ -1,0 +1,4 @@
+Requirement,Design,Code,Test,Risk
+RQ-01,requirements,src-flink-traffic_job.py,test_latency,R-01
+RQ-02,privacy,src-schemas-traffic_event.py,test_privacy,R-02
+RQ-03,requirements,src-api-main.py,test_api,R-01

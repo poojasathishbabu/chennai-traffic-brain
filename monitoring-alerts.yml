@@ -1,0 +1,5 @@
+groups:
+- name: traffic
+  rules:
+  - {alert: HighLatency, expr: latency_p99 > 3, for: 2m}
+  - {alert: DriftDetected, expr: drift_score > 0.15, for: 5m}

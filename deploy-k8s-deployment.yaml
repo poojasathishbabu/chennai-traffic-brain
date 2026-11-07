@@ -1,0 +1,4 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: traffic-brain-api}
+spec: {replicas: 2, template: {spec: {containers: [{name: api, image: chennai-traffic-brain:latest, ports: [{containerPort: 8000}]}]}}}

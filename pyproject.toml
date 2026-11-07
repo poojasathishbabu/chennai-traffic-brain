@@ -1,0 +1,5 @@
+[project]
+name="chennai-traffic-brain"
+version="1.0.0"
+requires-python=">=3.11"
+dependencies=["polars>=1.5","kafka-python-ng","clickhouse-connect","fastapi","uvicorn","pydantic","redis"]

@@ -1,0 +1,1 @@
+-- Flink SQL: CREATE TABLE kafka_raw (...) WITH ('connector'='kafka','topic'='traffic.raw.v1'); INSERT INTO ch_sink SELECT corridor, TUMBLE_START(ts, INTERVAL '10' SECOND) FROM kafka_raw GROUP BY corridor, TUMBLE(ts, INTERVAL '10' SECOND);
