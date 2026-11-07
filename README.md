@@ -18,21 +18,7 @@ Sources (CCTV/GPS/Signals/Buses) -> Kafka (48 partitions) -> Flink + Polars (val
 - Privacy: plate hashing + 100m GPS snapping, k-anonymity >=5
 - Governance: ISO/IEC 42001 Clause 8 traceability + ISO/IEC 23894 risk register R-01 to R-06
 
-## How To Run (No Install Needed - GitHub Web)
-1. Create repo on github.com/new
-2. Open github.dev/<your-username>/<repo-name>
-3. Paste these files - all files are in this zip, no folders inside
-4. Done
 
-## How To Run (Local)
-```bash
-docker compose up -d --build
-python -m src.producer.simulator --rate 50000
-curl http://localhost:8000/v1/corridors/OMR/congestion
-```
-
-## Files In This Zip - FLAT, No Folders
-All files are directly inside this zip. No folder-inside-folder.
 Example: `src-api-main.py` means original path was `src/api/main.py`
 Just upload all files to GitHub - GitHub will show them flat, but code still works.
 
